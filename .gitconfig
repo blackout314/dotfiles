@@ -1,0 +1,15 @@
+[push]
+    default = current
+[core]
+    editor = vim
+[color]
+    ui = true
+[fetch]
+    prune = true
+[alias]
+    merge = "merge --no-ff"
+    pull = "pull --no-ff"
+    st = "status"
+    cout = "checkout"
+    br = "branch"
+    co = "commit"

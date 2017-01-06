@@ -1,0 +1,3 @@
+[submodule "molokai"]
+	path = molokai
+	url = https://github.com/danielemariani/molokai
