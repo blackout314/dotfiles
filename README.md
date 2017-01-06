@@ -6,3 +6,4 @@ Simply run the following command to install the dotfiles in your $HOME directory
 
     sh -c "`curl -fsSL https://raw.githubusercontent.com/blackout314/dotfiles/master/install.sh`"
 
+based on https://github.com/danielemariani/dotfiles
