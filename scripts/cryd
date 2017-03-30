@@ -1,0 +1,12 @@
+#!/bin/bash
+# cryd
+
+FNAME=$1
+
+if [[ -z "$FNAME" ]]; then
+    echo "cryd <name of file>"
+    echo "  - cryd is a script to decrypt aes encrypted files"
+    exit;
+fi
+
+openssl enc -aes-256-cbc -in "cbc.$FNAME" -d > "$FNAME"

@@ -1,0 +1,13 @@
+#!/bin/bash
+# crye
+
+FNAME=$1
+
+if [[ -z "$FNAME" ]]; then
+    echo "crye <name of file>"
+    echo "  - crye is a script to encrypt files using aes and shred original"
+    exit;
+fi
+
+openssl enc -aes-256-cbc -e -in "$FNAME" -out "cbc.$FNAME"
+shred -u -z -n 26 "$FNAME"
