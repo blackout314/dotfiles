@@ -16,6 +16,7 @@ set cursorline
 set nowrap
 set noswapfile
 set backspace=indent,eol,start
+syntax on
 
 "===== Colors and theme ====="
 set t_Co=256
