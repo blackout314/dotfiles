@@ -20,3 +20,11 @@ function ton {
 function tof {
   . torsocks off
 }
+function tip {
+  wget -qO- https://check.torproject.org/ -U "Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0" | egrep -i "Congratulations. This browser is configured to use Tor.|Sorry. You are not using Tor." | uniq
+}
+
+# utils
+function wheather {
+  curl --insecure wttr.in/$1
+}
