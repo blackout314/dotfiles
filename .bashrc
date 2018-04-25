@@ -12,3 +12,11 @@ ii() {
   echo -e "\n${RED}Current network location :$NC " ; scselect
   echo -e "\n${RED}Public facing IP Address :$NC " ; ip
 }
+
+# torsocks
+function ton {
+  . torsocks on
+}
+function tof {
+  . torsocks off
+}
