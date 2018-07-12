@@ -25,6 +25,17 @@ function tip {
 }
 
 # utils
-function wheather {
+## weather
+function wtt {
   curl --insecure wttr.in/$1
+}
+## cheat.sh
+function csh {
+  echo $1
+  curl --insecure "cheat.sh/$1"
+}
+## rate.sx
+function rsh {
+  echo $1
+  curl --insecure "eur.rate.sx/$1"
 }
