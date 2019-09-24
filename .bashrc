@@ -1,7 +1,9 @@
-alias ~="cd ~" # ~:         Go Home
-alias ip="curl icanhazip.com" # ip:        Your public IP address
-alias ut="uptime" # ut:        Computer uptime
-alias numfiles="echo $(ls -1 | wc -l)" # numfiles:  Count of non-hidden files in current dir
+alias ~="cd ~"
+alias ip="curl icanhazip.com"
+alias ut="uptime"
+alias numfiles="echo $(ls -1 | wc -l)"
+alias serve3="python3 -m http.server"
+alias serve2="python -m SimpleHTTPServer"
 
 ii() {
   echo -e "\nYou are logged on ${RED}$HOST"
@@ -84,4 +86,3 @@ python knockpy.py -w list.txt $1
 ncx(){
 nc -l -n -vv -p $1 -k
 }
-
