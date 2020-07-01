@@ -5,6 +5,23 @@ alias numfiles="echo $(ls -1 | wc -l)"
 alias serve3="python3 -m http.server"
 alias serve2="python -m SimpleHTTPServer"
 
+# jump
+export MARKPATH=$HOME/.marks
+
+function j {
+      cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
+}
+function m {
+      mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1"
+}
+function um {
+      rm -i "$MARKPATH/$1"
+}
+function ms {
+      \ls -l "$MARKPATH" | tail -n +2 | sed 's/  / /g' | cut -d' ' -f9- | awk -F ' -> ' '{printf "%-10s -> %s\n", $1, $2}'
+}
+
+# strange
 ii() {
   echo -e "\nYou are logged on ${RED}$HOST"
   echo -e "\nAdditionnal information:$NC " ; uname -a
