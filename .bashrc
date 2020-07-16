@@ -1,3 +1,7 @@
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 # jump
 export MARKPATH=$HOME/.marks
 
