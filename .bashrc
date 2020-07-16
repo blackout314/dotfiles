@@ -1,10 +1,3 @@
-alias ~="cd ~"
-alias ip="curl icanhazip.com"
-alias ut="uptime"
-alias numfiles="echo $(ls -1 | wc -l)"
-alias serve3="python3 -m http.server"
-alias serve2="python -m SimpleHTTPServer"
-
 # jump
 export MARKPATH=$HOME/.marks
 
