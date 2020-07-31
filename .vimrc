@@ -10,9 +10,10 @@ set autoindent
 set smartindent "==$=="
 set number
 set list
+set listchars=tab:\ \ ,eol:$
 set laststatus=2
-set cursorcolumn
-set cursorline
+"-- set cursorcolumn --"
+"-- set cursorline --"
 set nowrap
 set noswapfile
 set backspace=indent,eol,start
