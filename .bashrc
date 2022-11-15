@@ -2,8 +2,8 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-alias psg = 'ps - ef | grep -i $1'
-alias nsg = 'netstat - natp | grep -i $1'
+alias psg='ps -ef | grep -i $1'
+alias nsg='netstat -natp | grep -i $1'
 
 # jump
 export MARKPATH=$HOME/.marks
